@@ -156,6 +156,7 @@ nav.show ul.grid {
 }
 
 nav .menu{
+    z-index: 2000;
     opacity: 0;
     visibility: hidden;
     top: -20rem;
@@ -188,6 +189,7 @@ nav.show .menu{
 
 /*====== TOGGLE MENU */
 .toggle{
+    z-index: 4000;
     color: var(--link-color);
     font-size: 2rem;
     cursor: pointer;
@@ -224,38 +226,47 @@ nav.show .icon-menu{
 }
 
 /*====== HOME  */
-#home{
+.home-bg{
     height: 100vh;
+}
+#home{
+    height: 70vh;
+    margin: auto;
+    z-index: 0;
     background-image: url(img/bg-hero-teste.jpg);
-    clip-path: polygon(100% 0, 14% 0, 100% 100%);
+    clip-path: polygon(35% 0, 100% 0, 100% 100%);
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
 }
 
-.hero-img{
-    width: 55%;
-    z-index: 1;
-    position: absolute;
-    top: calc(var(--header-heigth) + 15rem);
-}
-
 .hero-text{
-    position: absolute;
-    bottom: 2rem;
-    left: 15%;
+    margin-top: 2rem;
+    height: 10vh;
+    z-index: 1000;
     color: var(--base-color);
     text-align: center;
-    margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     font-family: var(--font-family);
 }
 
 .hero-destaq{
-    font-weight: 800;
+    letter-spacing: 7px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
+.img-hero{
+    z-index: 1000;
+    display: block;
+    width: 70%;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+}
 
 /*====== ABOUT  */
 #about{
@@ -510,24 +521,18 @@ nav.show .icon-menu{
         background-repeat: no-repeat;
         background-position: top right;
         clip-path: polygon(100% 0, 14% 0, 100% 100%);
-        z-index: 0;
-        
     }
 
-    .hero-img{
+    .img-hero{
         position: absolute;
-        top: calc(var(--header-heigth) +  15rem);
-        left: .5rem;
-        width: 50%;
+        width: 60%;
+        top: 47%;
     }
 
     .hero-text{
-        position: absolute;
-        bottom: 2rem;
-        left: 20%;
+        padding-top: 2rem;
         color: var(--base-color);
-        text-align: center;
-        margin-top: 1rem;
+        margin: auto;
         font-size: 1.2rem;
         font-weight: 500;
         font-family: var(--font-family);
@@ -624,11 +629,13 @@ nav.show .icon-menu{
     }
 
     #home{
+        height: 70vh;
+
         background-image: url(img/bg-hero-teste.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top right;
-        clip-path: polygon(100% 0, 14% 0, 100% 100%);
+        clip-path: polygon(10% 0, 100% 0, 100% 100%);
         z-index: 0;
     }
 
@@ -636,13 +643,16 @@ nav.show .icon-menu{
         position: absolute;
         top: calc(var(--header-heigth) +  10rem);
         left: 3rem;
-        width: 40%;
+        width: 80%;
     }
 
     .hero-text{
-        position: absolute;
-        bottom: 1rem;
-        left: 40%;
+        z-index: 2000;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 1rem;
+        
     }
 
     .hero-destaq{
