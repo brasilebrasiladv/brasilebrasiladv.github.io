@@ -328,22 +328,28 @@
 
  .card {
      height: 17.5rem;
-     background-color: var(--body-color);
+     background-image: url(img/bg-madeira.png);
      padding: 1rem;
      border-radius: 5px;
      text-align: center;
  }
 
+ .card .subtitle{
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+ }
+
  .card .card-icon {
-     color: var(--base-color);
      font-size: 2rem;
+     color: #fff;
      padding-bottom: .5rem;
  }
 
  .card .description {
      text-align: center;
+     color: #fff;
  }
-
 
  /*====== PARTNERS  */
  #partners {
@@ -403,8 +409,8 @@
  /*====== CONTACT  */
 
  #contact {
-     background-color: var(--ligth-color);
-     font-family: var(--font-family);
+    background-color: #f7953f13;
+    font-family: var(--font-family);
  }
 
  #contact .button {
