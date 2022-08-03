@@ -1,18 +1,3 @@
- @font-face {
-     font-family: 'Consolas';
-     src: url('CONSOLA.TTF') format('truetype')
- }
-
- @font-face {
-     font-family: 'ConsolasTitle';
-     src: url('Consolas.ttf') format('truetype')
- }
-
- @font-face {
-     font-family: 'Swis';
-     src: url('swiss-721.otf') format('opentype')
- }
-
  :root {
 
      /* Colors */
@@ -28,8 +13,7 @@
      --section-padding: 11.81rem;
      --header-heigth: 4.625rem;
 
-     --font-family: 'Consolas', sans-serif;
-     --font-title: 'ConsolasTitle', sans-serif;
+     --font-family: 'DM Sans', sans-serif;
  }
 
 
