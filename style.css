@@ -661,7 +661,8 @@
      }
 
      .hero-text{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
      }
 
      .section {
@@ -712,6 +713,7 @@
 
      #partners .img-box {
          width: 150px;
+         margin-bottom: 0;
      }
 
      #partners h3.subtitle {
