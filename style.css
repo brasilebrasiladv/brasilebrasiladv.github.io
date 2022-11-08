@@ -160,6 +160,7 @@
      gap: 2rem;
  }
 
+
  nav .menu {
      z-index: 2000;
      opacity: 0;
@@ -261,8 +262,9 @@
      margin-left: 1rem;
  }
 
-.hero-text {
-    margin-top: 1rem;
+ .hero-text {
+     margin-right: 2rem;
+     margin-top: 1rem;
      z-index: 1000;
      color: var(--base-color);
      text-align: center;
@@ -278,8 +280,8 @@
      margin-bottom: 0;
  }
 
- #about .description{
-    font-family: var(--font-family);
+ #about .description {
+     font-family: var(--font-family);
  }
 
  #about .description,
@@ -318,10 +320,10 @@
      text-align: center;
  }
 
- .card .subtitle{
-    letter-spacing: 2px;
-    font-weight: 600;
-    color: #fff;
+ .card .subtitle {
+     letter-spacing: 2px;
+     font-weight: 600;
+     color: #fff;
  }
 
  .card .card-icon {
@@ -393,8 +395,8 @@
  /*====== CONTACT  */
 
  #contact {
-    background-color: #f7953f13;
-    font-family: var(--font-family);
+     background-color: #f7953f13;
+     font-family: var(--font-family);
  }
 
  #contact .button {
@@ -545,12 +547,13 @@
          clip-path: polygon(100% 0, 14% 0, 100% 100%);
      }
 
-     .hero-img{
-        top: 55%;
+     .hero-img {
+         top: 55%;
      }
 
-     .hero-text{
-        font-size: 1.5rem;
+     .hero-text {
+         font-size: 1.5rem;
+         margin-right: 2rem;
      }
 
 
@@ -595,9 +598,13 @@
  }
 
  @media (min-width: 1024px) {
-    :root{
-        font-size: 1.1rem;
-    }
+     :root {
+         font-size: 1.1rem;
+     }
+
+     .menu .grid .link {
+         font-size: 1rem;
+     }
 
      header {
          display: flex;
@@ -654,15 +661,17 @@
          z-index: 0;
      }
 
-     .hero-img{
-        top: 55%;
-        left: 30%;
-        width: 50%;
+     .hero-img {
+         top: 55%;
+         left: 30%;
+         width: 50%;
      }
 
-     .hero-text{
-        font-size: 1.5rem;
-        font-weight: 500;
+     .hero-text {
+         margin-right: 2rem;
+         font-size: 1.5rem;
+         font-weight: 500;
+         text-align: center;
      }
 
      .section {
@@ -676,8 +685,8 @@
      #atuation .cards {
          display: grid;
          grid-template-columns:
-             'card1''card2'
-             'card3''card4';
+             'card1' 'card2'
+             'card3' 'card4';
      }
 
      .card1 {
